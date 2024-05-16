@@ -1,0 +1,14 @@
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\bin\Debug\net8.0\Comandas.exe
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\bin\Debug\net8.0\Comandas.deps.json
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\bin\Debug\net8.0\Comandas.runtimeconfig.json
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\bin\Debug\net8.0\Comandas.dll
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\bin\Debug\net8.0\Comandas.pdb
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.AssemblyInfoInputs.cache
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.AssemblyInfo.cs
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.csproj.CoreCompileInputs.cache
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.dll
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\refint\Comandas.dll
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.pdb
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.genruntimeconfig.cache
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\ref\Comandas.dll
