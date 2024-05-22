@@ -1,22 +1,19 @@
 using ComandasApi.Models;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
-using System.Linq;
+
 
 namespace ComandasApi.Services
 {
     public class ComandaService
     {
-        private readonly string _filePath = "comandas.txt";
+        private readonly string filePath = "comandas.txt";
 
         public List<Comanda> GetAllComandas()
         {
             var comandas = new List<Comanda>();
-            if (File.Exists(_filePath))
+            if (File.Exists(filePath))
             {
-                var lines = File.ReadAllLines(_filePath);
+                var lines = File.ReadAllLines(filePath);
                 foreach (var line in lines)
                 {
                     var parts = line.Split(';');
@@ -25,8 +22,12 @@ namespace ComandasApi.Services
                         Id = int.Parse(parts[0]),
                         Mesa = parts[1],
                         Platillo = parts[2],
-                        Cantidad = int.Parse(parts[3]),
-                        Fecha = DateTime.Parse(parts[4], null, DateTimeStyles.RoundtripKind)
+                        Bebestible = parts[3],
+                        Postre = parts[4],
+                        CantidadPlatillo = int.Parse(parts[5]),
+                        CantidadBebestible = int.Parse(parts[6]),
+                        CantidadPostre = int.Parse(parts[7]),
+                        Fecha = DateTime.Parse(parts[8], null, DateTimeStyles.RoundtripKind)
                     };
                     comandas.Add(comanda);
                 }
@@ -71,8 +72,8 @@ namespace ComandasApi.Services
 
         private void SaveAllComandas(List<Comanda> comandas)
         {
-            var lines = comandas.Select(c => $"{c.Id};{c.Mesa};{c.Platillo};{c.Cantidad};{c.Fecha.ToString("o")}");
-            File.WriteAllLines(_filePath, lines);
+            var lines = comandas.Select(c => $"{c.Id};{c.Mesa};{c.Platillo};{c.Bebestible};{c.Postre};{c.CantidadPlatillo};{c.CantidadBebestible};{c.CantidadPostre};{c.Fecha.ToString("o")}");
+            File.WriteAllLines(filePath, lines);
         }
     }
 }

@@ -1,44 +1,52 @@
 using ComandasApi.Menus;
-using System;
 
-
-MenuPrincipal();
-
-void MenuPrincipal()
+class Program
 {
-    int opcion;
-
-    do
+    static void Main()
     {
-        Console.Clear();
-        Console.WriteLine("================================================");
-        Console.WriteLine("- Menú Principal:");
-        Console.WriteLine("================================================");
-        Console.WriteLine();
-        Console.WriteLine("1. Gestionar comandas");
-        Console.WriteLine("2. Salir");
-        Console.Write("Ingrese el número de la opción deseada: ");
+        MenuPrincipal();
+    }
 
-        if (!int.TryParse(Console.ReadLine(), out opcion))
+    static void MenuPrincipal()
+    {
+        int opcion;
+
+        do
         {
-            Console.WriteLine("Opción no válida. Por favor, ingrese un número válido.");
-            continue;
-        }
+            Console.Clear();
+            Console.WriteLine("================================================");
+            Console.WriteLine("- Menú Principal:");
+            Console.WriteLine("================================================");
+            Console.WriteLine();
+            Console.WriteLine("1. Gestionar comandas");
+            Console.WriteLine("2. Ver reporte diario");
+            Console.WriteLine("3. Salir");
+            Console.Write("Ingrese el número de la opción deseada: ");
 
-        switch (opcion)
-        {
-            case 1:
-                var comandaMenu = new ComandaMenu();
-                comandaMenu.MostrarMenu();
-                break;
-            case 2:
-                Console.WriteLine("Saliendo del programa...");
-                break;
-            default:
-                Console.WriteLine("Opción no válida. Por favor, ingrese una opción válida.");
-                break;
-        }
+            if (!int.TryParse(Console.ReadLine(), out opcion))
+            {
+                Console.WriteLine("Opción no válida. Por favor, ingrese un número válido.");
+                continue;
+            }
 
-    } while (opcion != 2);
+            switch (opcion)
+            {
+                case 1:
+                    var comandaMenu = new ComandaMenu();
+                    comandaMenu.MostrarMenu();
+                    break;
+                case 2:
+                    var reporteDiarioMenu = new ReporteDiarioMenu();
+                    reporteDiarioMenu.MostrarReporteDiario();
+                    break;
+                case 3:
+                    Console.WriteLine("Saliendo del programa...");
+                    break;
+                default:
+                    Console.WriteLine("Opción no válida. Por favor, ingrese una opción válida.");
+                    break;
+            }
+
+        } while (opcion != 3);
+    }
 }
-

@@ -12,3 +12,4 @@ C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\refin
 C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.pdb
 C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.genruntimeconfig.cache
 C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\ref\Comandas.dll
+C:\Users\landc\Documents\NetCore\SistemaComandas\Comandas\obj\Debug\net8.0\Comandas.sourcelink.json
