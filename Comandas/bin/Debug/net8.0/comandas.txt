@@ -4,3 +4,4 @@
 4;2;ceviche de salmon;copa de vino blanco;fruta picada;1;1;1;2024-05-21T13:13:11.1932052-04:00
 5;3;Pescado frito;Jugo de melon;porcion torta de hojas;1;1;1;2024-05-21T13:48:38.4435764-04:00
 6;4;machas a la parmesana;;;1;0;0;2024-05-21T15:01:22.6855912-04:00
+7;5;Pastel de choclo;Jugo de frutilla;;1;1;0;2024-05-22T00:44:14.9164780-04:00
